@@ -1,0 +1,7 @@
+#!/bin/bash
+
+DATE=`ssh $1 date`
+echo "received >$DATE<"
+sleep $2
+sudo date -s "$DATE" > /dev/null
+echo "date set"

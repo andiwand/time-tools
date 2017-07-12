@@ -1,0 +1,7 @@
+#!/bin/bash
+
+sudo pip uninstall -y time-config
+sudo pip install https://github.com/andiwand/time-config/archive/master.zip
+
+sudo pip uninstall -y time-tests
+sudo pip install https://github.com/andiwand/time-tests/archive/master.zip

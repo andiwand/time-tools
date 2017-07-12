@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo "# time temp cpu0freq"
+while true; do
+  time=`date +%s.%N`
+  temp=`/opt/vc/bin/vcgencmd measure_temp | egrep -o '[0-9]+\.[0-9]+'`
+  cpu0freq=`cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq`
+  echo $time $temp $cpu0freq
+  sleep 1
+done

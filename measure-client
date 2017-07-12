@@ -1,0 +1,5 @@
+#!/bin/bash
+
+sudo insmod ~/gpio-netlink.ko
+sudo tvt-gpio-client 2 $1 --gpio-netlink ${@:2}
+sudo rmmod gpio-netlink

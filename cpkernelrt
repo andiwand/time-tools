@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd /boot
+sudo cp vmlinuz-4.6.7-rt11 kernel.img
+sudo cp vmlinuz-4.6.7-rt11-v7 kernel7.img

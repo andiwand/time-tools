@@ -1,0 +1,3 @@
+#!/bin/bash
+
+sudo tvt-gpio-server 3 ~/data --gpio-station ~/time-tests.c/gpio_station $*
