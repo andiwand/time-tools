@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<time>
+    <time-source>
+        <method>ntp</method>
+        <ntp-source>
+            <sources>
+                <server>rpi1.lan</server>
+            </sources>
+        </ntp-source>
+    </time-source>
+    <time-distribution>
+    </time-distribution>
+</time>

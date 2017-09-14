@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<time>
+    <time-source>
+        <method>ntp</method>
+        <ntp-source>
+            <sources>
+                <reference-clock>
+                    <driver>nmea</driver>
+                    <device>/dev/ttyS0</device>
+                    <pps-device>/dev/pps0</pps-device>
+                    <baud>9600</baud>
+                    <sentence>$GPZDG</sentence>
+                    <serial-offset>0.400</serial-offset>
+                    <init-script>/home/andreas/time-config/adafruit-init.sh</init-script>
+                </reference-clock>
+            </sources>
+        </ntp-source>
+    </time-source>
+    <time-distribution>
+        <ntp-distribution>
+        </ntp-distribution>
+    </time-distribution>
+</time>

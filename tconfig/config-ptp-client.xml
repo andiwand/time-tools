@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<time>
+    <time-source>
+        <method>ptp</method>
+        <ptp-source>
+            <interface>eth0</interface>
+        </ptp-source>
+    </time-source>
+    <time-distribution>
+    </time-distribution>
+</time>

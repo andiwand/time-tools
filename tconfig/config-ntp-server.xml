@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<time>
+    <time-source>
+        <method>ntp</method>
+        <ntp-source>
+            <sources>
+                <reference-clock>
+                    <driver>local</driver>
+                    <stratum>0</stratum>
+                </reference-clock>
+            </sources>
+        </ntp-source>
+    </time-source>
+    <time-distribution>
+        <ntp-distribution>
+        </ntp-distribution>
+    </time-distribution>
+</time>
