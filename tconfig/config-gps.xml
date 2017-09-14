@@ -5,13 +5,12 @@
         <ntp-source>
             <sources>
                 <reference-clock>
-                    <driver>nmea</driver>
-                    <device>/dev/ttyS0</device>
-                    <pps-device>/dev/pps0</pps-device>
-                    <baud>9600</baud>
-                    <sentence>$GPZDG</sentence>
-                    <serial-offset>0.400</serial-offset>
-                    <init-script>/home/andreas/time-config/adafruit-init.sh</init-script>
+                    <driver>gpsd</driver>
+                    <offset>0.400</offset>
+                </reference-clock>
+                <reference-clock>
+                    <driver>pps</driver>
+                    <device>/dev/pps0</device>
                 </reference-clock>
             </sources>
         </ntp-source>
