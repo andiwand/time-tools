@@ -16,7 +16,8 @@
         </ntp-source>
     </time-source>
     <time-distribution>
-        <ntp-distribution>
-        </ntp-distribution>
+        <ptp-distribution>
+            <interface>eth0</interface>
+        </ptp-distribution>
     </time-distribution>
 </time>
